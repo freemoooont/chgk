@@ -10,55 +10,67 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03050a8e-47b9-465e-bdb4-a6dcda31af69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/api-test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keys/private.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keys/public.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodemon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auth/apikey.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auth/authUtils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auth/authetication.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auth/authorization.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auth/schema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/ApiError.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/ApiResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/JWT.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/Logger.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/db.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/model/ApiKey.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/model/Keystore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/model/Role.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/model/User.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/repository/ApiKeyRepo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/repository/KeystoreRepo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/repository/RoleRepo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/repository/UserRepo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/asyncHandler.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/role.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/validator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/v1/access/logout.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/v1/access/schema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/v1/access/signin.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/v1/access/signup.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/v1/access/token.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/v1/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/v1/profile/schema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/v1/profile/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/app-request.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.exmpl.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    <list default="true" id="03050a8e-47b9-465e-bdb4-a6dcda31af69" name="Default Changelist" comment="init">
+      <change afterPath="$PROJECT_DIR$/api/src/core/db.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chgk-front/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chgk-front/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chgk-front/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chgk-front/next-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chgk-front/next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chgk-front/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chgk-front/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chgk-front/pages/_app.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chgk-front/pages/api/hello.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chgk-front/pages/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chgk-front/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chgk-front/public/vercel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chgk-front/styles/Home.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chgk-front/styles/globals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chgk-front/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/api/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keys/private.pem" beforeDir="false" afterPath="$PROJECT_DIR$/api/keys/private.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keys/public.pem" beforeDir="false" afterPath="$PROJECT_DIR$/api/keys/public.pem" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodemon.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/nodemon.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/apikey.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/auth/apikey.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/authUtils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/auth/authUtils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/authetication.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/auth/authetication.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/authorization.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/auth/authorization.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/auth/schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/ApiError.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/core/ApiError.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/ApiResponse.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/core/ApiResponse.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/JWT.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/core/JWT.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Logger.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/core/Logger.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/db.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/model/ApiKey.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/model/ApiKey.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/model/Keystore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/model/Keystore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/model/Role.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/model/Role.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/model/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/model/User.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/repository/ApiKeyRepo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/repository/ApiKeyRepo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/repository/KeystoreRepo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/repository/KeystoreRepo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/repository/RoleRepo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/repository/RoleRepo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/repository/UserRepo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/repository/UserRepo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/asyncHandler.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/helpers/asyncHandler.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/role.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/helpers/role.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/validator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/helpers/validator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/v1/access/logout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/access/logout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/v1/access/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/access/schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/v1/access/signin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/access/signin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/v1/access/signup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/access/signup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/v1/access/token.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/access/token.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/v1/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/v1/profile/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/profile/schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/v1/profile/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/profile/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/app-request.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/types/app-request.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.exmpl.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/tsconfig.exmpl.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +96,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.19.0" />
@@ -91,15 +104,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -154,7 +168,22 @@
       <workItem from="1619066450377" duration="79000" />
       <workItem from="1620216656743" duration="7305000" />
       <workItem from="1620392176851" duration="35088000" />
+      <workItem from="1621513698598" duration="509000" />
+      <workItem from="1621785720017" duration="1831000" />
+      <workItem from="1622091650873" duration="4356000" />
+      <workItem from="1622103046123" duration="1155000" />
+      <workItem from="1623187481178" duration="1256000" />
+      <workItem from="1624965351782" duration="408000" />
+      <workItem from="1624972295005" duration="1223000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1621513872597</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621513872599</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +201,11 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="403" y="255" key="#Log_Highlighting_(ideolog)" timestamp="1620824051023">
       <screen x="0" y="0" width="1440" height="900" />
@@ -185,26 +219,30 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1620553483623" />
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1621413347641">
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom" timestamp="1622102562794">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1621413347641" />
+    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1622102562794" />
     <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1620824081739" />
-    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1621413347638">
+    <state width="1419" height="245" key="GridCell.Tab.0.center" timestamp="1622102562790">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1621413347638" />
+    <state width="1419" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1622102562790" />
     <state width="1419" height="245" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1620824081736" />
-    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1621413347637">
+    <state width="1419" height="245" key="GridCell.Tab.0.left" timestamp="1622102562779">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1621413347637" />
+    <state width="1419" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1622102562779" />
     <state width="1419" height="245" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1620824081732" />
-    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1621413347640">
+    <state width="1419" height="245" key="GridCell.Tab.0.right" timestamp="1622102562792">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1621413347640" />
+    <state width="1419" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1622102562792" />
     <state width="1419" height="245" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1620824081737" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1621513919108">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1621513919108" />
     <state x="385" y="217" width="670" height="676" key="search.everywhere.popup" timestamp="1620794725461">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

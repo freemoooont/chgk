@@ -29,8 +29,8 @@
   },
   "scripts": {
     "start": "node src/server.js",
-    "dev": "ts-node src/server.ts",
-    "nodemon": "nodemon"
+    "dev": "../node_modules/.bin/ts-node src/server.ts",
+    "nodemon": "../node_modules/.bin/nodemon"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",

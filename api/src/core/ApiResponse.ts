@@ -31,7 +31,6 @@ abstract class ApiResponse {
         return this.prepare<ApiResponse>(res, this)
     }
 
-    //watafak neponyatno
     private static sanitize<T extends ApiResponse> (response: T): T {
         const clone: T = {} as T;
         Object.assign(clone, response);
