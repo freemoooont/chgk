@@ -8,7 +8,7 @@ import {Types} from "mongoose";
 import {BadRequestError} from "../../../core/ApiError";
 import {SuccessResponse} from "../../../core/ApiResponse";
 import authentication from "../../../auth/authetication";
-import _ from "lodash"
+import _ from "lodash";
 
 const router = express.Router();
 
@@ -16,7 +16,6 @@ router.get(
     '/public/id/:id',
     validator(schema.userId, ValidationSource.PARAM),
     asyncHandler(async(req: ProtectedRequest, res)=>{
-        //Добавить высасывание РОЛИ и выдачу по публичному запросу
         const user = await UserRepo.findProfileById(new Types.ObjectId(req.params.id));
         if (!user) throw new BadRequestError('User not registered');
         return new SuccessResponse('Success', {
@@ -39,4 +38,4 @@ router.get(
         }).send(res)
     })
 )
-export default router
+export default router;

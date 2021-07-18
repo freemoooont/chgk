@@ -12,6 +12,7 @@ export default interface User extends Document{
     roles: Role[];
     verified?: boolean;
     createdAt?: Date;
+    status?: boolean;
     updatedAt?: Date;
 }
 

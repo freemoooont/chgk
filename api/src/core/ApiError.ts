@@ -23,7 +23,7 @@ enum ErrorType {
 }
 
 export abstract class ApiError extends Error {
-    //странный конструктор, разберись
+
     constructor(public type: ErrorType, public message: string = 'error'){
         super(type)
     }

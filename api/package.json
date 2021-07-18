@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "node src/server.js",
-    "dev": "../node_modules/.bin/ts-node src/server.ts",
+    "dev": "node_modules/.bin/ts-node ./src/server.ts",
     "nodemon": "../node_modules/.bin/nodemon"
   },
   "devDependencies": {

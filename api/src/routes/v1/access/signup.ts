@@ -6,8 +6,8 @@ import {RoleCode} from "../../../database/model/Role";
 import UserRepo from "../../../database/repository/UserRepo";
 import User from "../../../database/model/User"
 import {BadRequestError} from "../../../core/ApiError";
-import crypto from 'crypto'
-import bcrypt from 'bcrypt'
+import crypto from 'crypto';
+import bcrypt from 'bcrypt';
 import {createTokens} from "../../../auth/authUtils";
 import {SuccessResponse} from "../../../core/ApiResponse";
 import _ from "lodash";
@@ -35,7 +35,7 @@ router.post(
             } as User,
             accessTokenKey,
             refreshTokenKey,
-            RoleCode.STUDENT
+            RoleCode.USER
         );
 
         const tokens = await createTokens(createdUser, keystore.primaryKey, keystore.secondaryKey);

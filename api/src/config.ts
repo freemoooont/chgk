@@ -1,5 +1,5 @@
 export const environment = process.env.NODE_ENV || 'development';
-export const port = process.env.PORT || 8080;
+export const port = process.env.PORT || 8081;
 
 export const db = {
     name: process.env.DB_NAME || '',
