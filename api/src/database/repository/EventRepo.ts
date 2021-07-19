@@ -43,7 +43,7 @@ export default class EventRepo{
             .exec();
     }
 
-    //TODO: Проверить как это будет работать. Возможно придется добавлять select=false в разные поля в команде
+    //TODO: Добавить пару полей с результатами
     public static async findInfoById(id: Types.ObjectId): Promise<Event | null>{
         return EventModel.findOne({_id: id})
             .select('+registeredTeams +status')
@@ -62,10 +62,23 @@ export default class EventRepo{
     //TODO: Проверить какую коллекцию будет возвразать и че по типизации получилось
     public static async findAll(): Promise<Event[]| null>{
         return EventModel.find().exec()
-    }
+    };
 
     public static async addTeamById(team: Team, eventId: Types.ObjectId): Promise<any>{
         //эта конструкция работает только с чгкшными эвентами
+        const registeredTeams = await EventModel.findOne({_id: eventId})
+            .populate({
+                path: 'registeredTeams',
+                match: {_id: team._id}
+            })
+            .select('+registeredTeams');
+
+        // @ts-ignore
+        const agent = registeredTeams.registeredTeams.find((obj)=> obj._id.equals(team._id));
+
+        if(agent)
+            throw new BadRequestError('Team already registered');
+
         // @ts-ignore
         const eventResultInfo = await ChgkResultModel.findOne({event: eventId}).exec()
         // @ts-ignore
@@ -76,16 +89,10 @@ export default class EventRepo{
             throw new InternalError();
         await eventResultInfo.save();
 
-        const registeredTeams = await EventModel.findOne({_id: eventId})
-            .populate({
-                path: 'registeredTeams',
-                match: {_id: team._id}
-            })
-            .select('+registeredTeams');
-        // @ts-ignore
-        if (registeredTeams.registeredTeams.length !== 0)
-            throw new BadRequestError('Team already registered');
-
         return EventModel.updateOne({_id: eventId}, {$push: {registeredTeams: team._id}})
-    }
+    };
+
+    public static async findAllByCode(code: string): Promise<Event[] | Event | null> {
+        return EventModel.find({code});
+    };
 }

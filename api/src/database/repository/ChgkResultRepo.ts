@@ -1,6 +1,8 @@
 import ChgkResult, {ChgkResultModel, GameResultStatusCode} from "../model/ChgkResult";
 import Event from "../model/Event";
-import Team from "../model/Team";
+import Team, {TeamModel} from "../model/Team";
+import OverallPlacesChanger from "../../core/OverallPlacesChanger";
+
 
 export default class ChgkResultRepo{
     private event: Event;
@@ -19,12 +21,32 @@ export default class ChgkResultRepo{
        return await ChgkResultModel.create(chgkPreResult);
     }
 
-    //TODO: возможно придется переделать на айдишник, а не на целый объект. Хуй знает как будет работать! Не забудь проверить
-    public static async ChangeGameStatusByEvent(
+    public static async ChangeChgkResultStatusByEvent(
         code: string,
         event: Event
     ) :Promise<any>{
-        return ChgkResultModel.updateOne({event: event}, {$set: {GameResultStatusCode: code}})
+        const results = await this.findAllResultByEvent(event);
+        if(code == GameResultStatusCode.CLOSED && results) {
+            const allTeamsResults = results.teamResults;
+            if (allTeamsResults) {
+                //TODO: Здесь рейтинг для команды в общем зачете сезона необходимо считать от итогого места в командае
+                const rating = allTeamsResults.map((team) => ({team: team.team, rating: team.rating}));
+                rating.map(async (obj) => {
+                    await TeamModel.updateOne({_id: obj.team._id}, {$set: {rating: obj.rating}});
+                })
+            }
+
+            const teams = await TeamModel.find().lean<Team[]>().exec();
+            const result = OverallPlacesChanger(teams);
+            result.map(
+                async (obj) => {
+                    await TeamModel.updateOne(
+                        {_id: obj._id},
+                        {$set: {overallPlace: obj.overallPlace}});
+                });
+        }
+
+        return ChgkResultModel.updateOne({event: event}, {$set: {status: code}})
     }
 
     public static async updateAllResultByEvent(
@@ -33,20 +55,38 @@ export default class ChgkResultRepo{
     ) :Promise<any>{
         return ChgkResultModel.updateOne({event}, {$set: {...results}}).lean<ChgkResult>().exec()
     }
-    //TODO: Проверить как работает поиск по вложенным документам и еслч уебать жестко
-    //TODO: ДОБАВИТЬ ПОИСК ПО КОНКРЕТНОМУ ЭВЕНТУ В ЭТОТ МЕТОД
-    public static async findResultByTeam(
+    //TODO: Проверить как работает поиск на нескольких эвентах
+    public static async findResultsByTeam(
         team: Team
     ):Promise<any>{
-        return ChgkResultModel.findOne({'teamResults.team' : team})
-            .populate('team')
-            .lean<ChgkResult>()
-            .exec()
+        return ChgkResultModel.aggregate([{
+            $match: {'teamResults.team':{$eq:team._id}}
+        },{
+            $unwind: '$teamResults',
+        },{
+            $match: {'teamResults.team':{$eq:team._id}}
+        },{ //TODO: удалить лишние поля из эвента
+            $lookup: {
+                from: 'events',
+                localField: 'event',
+                foreignField: '_id',
+                as: 'eventInfo'
+            }
+        },{
+            $project: {
+                place: '$teamResults.place',
+                rightAnswers: '$teamResults.rightAnswers',
+                questionResult: '$teamResults.questionResult',
+                rating: '$teamResults.rating',
+                playersOnGame: '$teamResults.playersOnGame',
+                eventInfo: '$eventInfo'
+            }
+        }])
     }
 
     public static async findAllResultByEvent(
         event: Event
-    ): Promise<any> {
+    ): Promise<ChgkResult> {
         return ChgkResultModel.findOne({event})
             .lean<ChgkResult>()
             .exec()

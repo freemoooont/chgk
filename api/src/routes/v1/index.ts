@@ -6,7 +6,7 @@ import user from "./profile/user";
 import token from "./access/token";
 import logout from "./access/logout";
 import teamRoutes from "./team/teamRoutes";
-import capitan from "./event/capitan";
+import eventProfile from "./event/eventProfile";
 
 import admin from "./admin/adminRoutes";
 
@@ -25,10 +25,9 @@ router.use('/logout', logout);
 router.use('/team', teamRoutes);
 
 //events
-router.use('/capitan/event', capitan);
+router.use('/event', eventProfile);
 
 //admins
 router.use('/admin', admin);
-
 
 export default router;

@@ -59,7 +59,8 @@ const schema = new Schema(
                 }
             ],
             select: false,
-            default: undefined
+            required: true,
+            default: []
         },
         status: {
             type: Schema.Types.Boolean,

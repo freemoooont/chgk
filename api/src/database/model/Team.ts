@@ -8,11 +8,14 @@ export const COLLECTION_NAME = 'teams';
 export default interface Team extends Document{
     name: string;
     capitan: User;
+    status?: boolean;
+    overallPlace?: number;
+    rating?: number;
     teamMates?: string[];
     profilePicUrl?: string;
     createdAt?: Date;
     updatedAt?: Date;
-}
+};
 
 const schema = new Schema(
     {
@@ -26,6 +29,21 @@ const schema = new Schema(
             required: true,
             ref: 'User',
             index: true
+        },
+        status: {
+            type: Schema.Types.Boolean,
+            required: true,
+            default: true
+        },
+        overallPlace: {
+          type: Schema.Types.Number,
+          required: true,
+          default: 999
+        },
+        rating: {
+            type: Schema.Types.Number,
+            required: true,
+            default: 0
         },
         profilePicUrl: {
             type: Schema.Types.String,

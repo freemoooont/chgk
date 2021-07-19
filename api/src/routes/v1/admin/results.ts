@@ -22,13 +22,15 @@ router.put(
              const preResult = await ChgkResultRepo.createPreResultByEvent({_id: Types.ObjectId(req.params.id)}as Event);
              if (!preResult) throw new InternalError();
         }
-
         const teamResults: TeamResult[] = req.body.teamResults
             .map(
                 (obj: any) => {
                     const team = {_id: Types.ObjectId(obj.team)} as Team;
                     return ({
+                        //TODO: Добавить проверку на null у данных пришедших с клиента
                         team: team,
+                        place: obj.place,
+                        rightAnswers: obj.rightAnswers,
                         questionResult: obj.questionResult,
                         rating: obj.rating,
                         status: obj.status,
@@ -53,5 +55,17 @@ router.put(
         new SuccessMsgResponse('Results added successful').send(res);
     })
 );
+
+router.patch(
+    '/:id/chgk/closed',
+    asyncHandler(async (req: ProtectedRequest, res) => {
+        const updated = await ChgkResultRepo
+            .ChangeChgkResultStatusByEvent
+            (GameResultStatusCode.CLOSED, {_id: new Types.ObjectId(req.params.id)} as Event);
+        if (!updated) throw new InternalError();
+
+        new SuccessMsgResponse('Results was closed').send(res);
+    })
+)
 
 export default router;

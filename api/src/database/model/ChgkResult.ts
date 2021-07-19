@@ -13,14 +13,15 @@ export const enum GameResultStatusCode {
 
 export interface TeamResult{
     team: Team;
-    //TODO: добавить какое заняла место команда
+    place?: number;
+    rightAnswers?: number;
     questionResult?: string;
     rating?: number;
     status?: boolean;
     playersOnGame?: string[];
 }
 
-export default interface ChgkResult{
+export default interface ChgkResult {
     event: Event;
     teamResults?: TeamResult[];
     status: string;
@@ -36,6 +37,15 @@ const teamResultSchema = new Schema(
             type: Schema.Types.ObjectId,
             ref: 'Team',
             required: true
+        },
+        place: {
+            type: Schema.Types.Number,
+
+        },
+        rightAnswers: {
+            type: Schema.Types.Number,
+            required: true,
+            default: 0
         },
         questionResult: {
             type: Schema.Types.String,

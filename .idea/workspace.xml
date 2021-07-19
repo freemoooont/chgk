@@ -10,41 +10,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03050a8e-47b9-465e-bdb4-a6dcda31af69" name="Default Changelist" comment="init">
+    <list default="true" id="03050a8e-47b9-465e-bdb4-a6dcda31af69" name="Default Changelist" comment="Работа с эндпоинтами">
       <change afterPath="$PROJECT_DIR$/api/logs/.7911505d1cb8c52a2a36766b1cca935c11b5442f-audit.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api/logs/2021-07-17.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api/logs/2021-07-18.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api/logs/2021-07-19.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/database/model/ChgkResult.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/database/model/Event.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/database/model/Team.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/database/repository/ChgkResultRepo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/database/repository/EventRepo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/database/repository/TeamRepo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/routes/v1/admin/adminRoutes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/routes/v1/admin/event.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/routes/v1/admin/results.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/routes/v1/admin/schema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/routes/v1/event/capitan.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/routes/v1/team/create.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/routes/v1/team/publicProfile.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/routes/v1/team/teamRoutes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/routes/v1/team/update.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/logs/2021-07-20.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/core/OverallPlacesChanger.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/routes/v1/event/eventProfile.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/auth/authetication.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/auth/authetication.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/auth/authorization.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/auth/authorization.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/core/ApiError.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/core/ApiError.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/database/model/Role.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/model/Role.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/database/model/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/model/User.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/routes/v1/access/signup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/access/signup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/database/model/ChgkResult.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/model/ChgkResult.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/database/model/Event.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/model/Event.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/database/model/Team.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/model/Team.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/database/repository/ChgkResultRepo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/repository/ChgkResultRepo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/database/repository/EventRepo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/repository/EventRepo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/database/repository/TeamRepo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/repository/TeamRepo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/routes/v1/admin/results.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/admin/results.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/routes/v1/event/capitan.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/routes/v1/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/routes/v1/profile/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/profile/user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/routes/v1/team/create.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/team/create.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/routes/v1/team/publicProfile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/team/publicProfile.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/routes/v1/team/teamRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/team/teamRoutes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/routes/v1/team/update.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/team/capitan.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,6 +150,8 @@
       <workItem from="1624965351782" duration="408000" />
       <workItem from="1624972295005" duration="1223000" />
       <workItem from="1626200733513" duration="67651000" />
+      <workItem from="1626650151051" duration="328000" />
+      <workItem from="1626683668668" duration="26925000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1621513872597</created>
@@ -171,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621513872599</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Работа с эндпоинтами">
+      <created>1626650403152</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626650403152</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +188,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Работа с эндпоинтами" />
+    <option name="LAST_COMMIT_MESSAGE" value="Работа с эндпоинтами" />
   </component>
   <component name="WindowStateProjectService">
     <state x="374" y="223" key="#Log_Highlighting_(ideolog)" timestamp="1626520338237">
@@ -211,30 +208,30 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1620553483623" />
-    <state width="1419" height="354" key="GridCell.Tab.0.bottom" timestamp="1626650049487">
+    <state width="1419" height="377" key="GridCell.Tab.0.bottom" timestamp="1626730505473">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="354" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1626650049487" />
+    <state width="1419" height="377" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1626730505473" />
     <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1620824081739" />
-    <state width="1419" height="354" key="GridCell.Tab.0.center" timestamp="1626650049485">
+    <state width="1419" height="377" key="GridCell.Tab.0.center" timestamp="1626730505472">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="354" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1626650049485" />
+    <state width="1419" height="377" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1626730505472" />
     <state width="1419" height="245" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1620824081736" />
-    <state width="1419" height="354" key="GridCell.Tab.0.left" timestamp="1626650049484">
+    <state width="1419" height="377" key="GridCell.Tab.0.left" timestamp="1626730505471">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="354" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1626650049484" />
+    <state width="1419" height="377" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1626730505471" />
     <state width="1419" height="245" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1620824081732" />
-    <state width="1419" height="354" key="GridCell.Tab.0.right" timestamp="1626650049486">
+    <state width="1419" height="377" key="GridCell.Tab.0.right" timestamp="1626730505472">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="354" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1626650049486" />
+    <state width="1419" height="377" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1626730505472" />
     <state width="1419" height="245" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1620824081737" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1621513919108">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1626650412392">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1621513919108" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1626650412392" />
     <state x="385" y="217" width="670" height="676" key="search.everywhere.popup" timestamp="1626543920496">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

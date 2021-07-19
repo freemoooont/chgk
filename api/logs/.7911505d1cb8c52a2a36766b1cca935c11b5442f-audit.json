@@ -1,0 +1,29 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/vlad/Documents/web-dev/chgk/api/logs/.7911505d1cb8c52a2a36766b1cca935c11b5442f-audit.json",
+    "files": [
+        {
+            "date": 1626511259120,
+            "name": "/Users/vlad/Documents/web-dev/chgk/api/logs/2021-07-17.log",
+            "hash": "6fd65beda14c69533acf2e359992022e"
+        },
+        {
+            "date": 1626621658560,
+            "name": "/Users/vlad/Documents/web-dev/chgk/api/logs/2021-07-18.log",
+            "hash": "22b3fe4d8530f67cf5b30295e26362b5"
+        },
+        {
+            "date": 1626624229337,
+            "name": "/Users/vlad/Documents/web-dev/chgk/api/logs/2021-07-19.log",
+            "hash": "0660055e9d7d8974215d65ebf5848570"
+        },
+        {
+            "date": 1626711466615,
+            "name": "/Users/vlad/Documents/web-dev/chgk/api/logs/2021-07-20.log",
+            "hash": "ec496c728589eeae6ca88e23e8bd9f10"
+        }
+    ]
+}
