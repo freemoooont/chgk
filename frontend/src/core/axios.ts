@@ -1,9 +1,10 @@
+/// <reference path="../app-types.d.ts" />
 import axios, {Method} from "axios";
-import { Dispath } from "app-types";
+import { Dispatch } from "../app-types";
 
 const instance = axios.create({
     //TODO: после докеризации и создания ssr, поменять здесь на пацанский ENV
-    baseURL: 'http://localhost:8081',
+    baseURL: 'http://localhost:8081/v1/',
     timeout: 10000,
     headers: {
         //TODO: поменять на process.env
@@ -64,15 +65,14 @@ export async function publicRequest<T extends object | null, R extends object | 
 export async function protectedRequest<T extends object | null, R extends object | null>(
     request: NetworkRequest<T>,
     token: string,
-    dispatch: void
+    // dispatch: Dispatch
 ): Promise<NetworkResponse<R>>{
     try {
         (request as NetworkAuthRequest<T>).headers = { Authorization: `Bearer ${token}` };
         const {data} = await instance.request<NetworkResponse<R>>(request);
         return data;
     } catch(e) {
-        if (e.response && e.response.status === '401') dispatch();
+        // if (e.response && e.response.status === '401') dispatch(forceLogout());
         throw e;
     }
 }
-

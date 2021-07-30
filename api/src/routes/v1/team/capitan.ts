@@ -50,6 +50,15 @@ router.get(
     })
 );
 
+router.get(
+    '/my/short',
+    asyncHandler(async(req:ProtectedRequest,res)=>{
+        const team = await TeamRepo.findByCapitan({_id: Types.ObjectId(req.user._id)}as User);
+        if (team == null) throw new InternalError();
+        new SuccessResponse('Your team', team).send(res);
+    })
+);
+
 router.put(
     '/register/event/:id',
     asyncHandler(async(req:ProtectedRequest, res)=>{
