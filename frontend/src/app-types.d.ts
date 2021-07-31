@@ -1,5 +1,3 @@
-import {Action as ReduxAction} from "redux";
-
 declare interface Action<T = any>{
     readonly type: string;
     readonly payload?: T;
@@ -41,14 +39,17 @@ export type EventInfo = {
 }
 
 
-type TeamInfo = {
-    _id: string,
-    status: boolean,
-    overallPlace: number,
-    rating: number,
-    teamMates: Array<string>,
-    name: string,
-    capitan: User
+export type Team = {
+    _id: string;
+    name: string;
+    capitan: User;
+    status?: boolean;
+    overallPlace?: number;
+    rating?: number;
+    teamMates?: string[];
+    profilePicUrl?: string;
+    createdAt?: Date;
+    updatedAt?: Date;
 }
 
 type EventTeamResults = {
@@ -62,9 +63,24 @@ type EventTeamResults = {
 }
 
 export type UserTeam = {
-    teamInfo: TeamInfo;
+    teamInfo: Team;
     eventResults: EventTeamResults[];
-    
+}
+
+export type Event = {
+    _id: string
+    name: string;
+    description: string;
+    code: string;
+    startDate: Date;
+    place: string;
+    registeredTeams?: Team[];
+    status?: boolean;
+    questionAmount?: number;
+    questionInTour?: number;
+    picUrl?: string;
+    createdAt?: Date;
+    updatedAt?: Date;
 }
 
 

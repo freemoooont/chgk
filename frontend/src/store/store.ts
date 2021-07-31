@@ -5,6 +5,8 @@ import {rootReducer} from "./rootReducer";
 import rootSaga from "./saga";
 import {UserState} from "./ducks/user/contracts/state";
 import {UserTeamState} from "./ducks/userTeam/contracts/state";
+import {EventsState} from "./ducks/events/contracts/state";
+import {TeamsListState} from "./ducks/teamsList/contracts/state";
 
 declare global {
     interface Window {
@@ -19,7 +21,9 @@ const sagaMiddleware = createSagaMiddleware();
 
 export interface RootState {
     user: UserState,
-    userTeam: UserTeamState
+    userTeam: UserTeamState,
+    events: EventsState,
+    teamsList: TeamsListState
 }
 
 export const store = createStore(rootReducer, composeEnhancers(applyMiddleware(sagaMiddleware)));

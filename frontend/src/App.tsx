@@ -8,6 +8,7 @@ import {Login} from "./pages/Login/Login";
 import {Home} from "./pages/Home/Home";
 import {fetchUserData} from "./store/ducks/user/actionCreators";
 import {UserTeam} from "./pages/UserTeam/UserTeam";
+import {TeamsList} from "./pages/TeamsList/TeamsList";
 
 function App() {
   const history = useHistory();
@@ -15,13 +16,14 @@ function App() {
   const isAuth = useSelector(selectIsAuth);
   const loadingStatus = useSelector(selectUserStatus);
   const isReady = loadingStatus !== LoadingStatus.NEVER && loadingStatus !== LoadingStatus.LOADING;
+
   React.useEffect(() => {
     dispatch(fetchUserData());
   }, [dispatch]);
 
 
   React.useEffect(() => {
-        if (!isAuth && isReady) {
+        if (!isAuth) {
           history.push('/login')
         } else if (history.location.pathname === '/') {
           history.push('/home')
@@ -34,6 +36,7 @@ function App() {
         <Route path="/login" component={Login} exact/>
         <Route path="/home" component={Home} exact/>
         <Route path="/my" component={UserTeam} exact/>
+        <Route path="/teams" component={TeamsList} exact/>
       </Switch>
     </div>
   );

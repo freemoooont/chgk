@@ -4,8 +4,6 @@ import {LoadingStatus} from "../../types";
 import {TeamApi} from "../../../services/api/TeamApi";
 import {UserTeamActionType} from "./contracts/actionTypes";
 
-
-
 export function* fetchUserTeam() {
     try{
         yield put(setUserTeamLoadingStatus(LoadingStatus.LOADING));

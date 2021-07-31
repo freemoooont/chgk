@@ -10,41 +10,39 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03050a8e-47b9-465e-bdb4-a6dcda31af69" name="Default Changelist" comment="app-types.d.ts added">
+    <list default="true" id="03050a8e-47b9-465e-bdb4-a6dcda31af69" name="Default Changelist" comment="Немного фронта и работы с api">
       <change afterPath="$PROJECT_DIR$/api/logs/2021-07-30.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api/logs/2021-07-31.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Home/Home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Login/Login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/UserTeam/UserTeam.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/services/api/AuthApi.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/services/api/TeamApi.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/services/utils/getToken.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/user/actionCreators.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/user/contracts/actionTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/user/contracts/state.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/user/reducers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/user/sagas.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/user/selectors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/actionCreators.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/contracts/actionTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/contracts/state.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/reducers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/sagas.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/selectors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/rootReducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/saga.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/EventCard/EventCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Team/TeamMiniCard/TeamMiniCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/TeamsList/TeamsList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/services/api/EventsApi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/actionCreators.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/contracts/actionTypes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/contracts/state.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/reducers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/sagas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/selectors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/actionCreator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/contracts/actionTypes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/contracts/state.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/reducers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/sagas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/selectors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/logs/.7911505d1cb8c52a2a36766b1cca935c11b5442f-audit.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/logs/.7911505d1cb8c52a2a36766b1cca935c11b5442f-audit.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/routes/v1/team/capitan.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/team/capitan.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app-types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app-types.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/core/axios.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/core/axios.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/UserTeam/UserTeam.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/UserTeam/UserTeam.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/api/AuthApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api/AuthApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/api/TeamApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api/TeamApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/sagas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/sagas.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/rootReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/rootReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/saga.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/saga.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,23 +76,33 @@
     <property name="javascript.nodejs.core.library.configured.version" value="12.19.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/api/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src/store/ducks/events" />
       <recent name="$PROJECT_DIR$/frontend/src" />
       <recent name="$PROJECT_DIR$/api/src/routes/v1/admin" />
       <recent name="$PROJECT_DIR$/api" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.dev (1)">
+  <component name="RunManager" selected="npm.start (1)">
     <configuration name="dev (1)" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/api/package.json" />
       <command value="run" />
@@ -179,7 +187,10 @@
       <workItem from="1626683668668" duration="32356000" />
       <workItem from="1627128393956" duration="4812000" />
       <workItem from="1627333901940" duration="17530000" />
-      <workItem from="1627632727185" duration="20644000" />
+      <workItem from="1627632727185" duration="20813000" />
+      <workItem from="1627716296534" duration="264000" />
+      <workItem from="1627717141859" duration="351000" />
+      <workItem from="1627718210542" duration="13155000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1621513872597</created>
@@ -209,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627333514156</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Немного фронта и работы с api">
+      <created>1627676271026</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627676271027</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +251,8 @@
     <MESSAGE value="Работа с эндпоинтами" />
     <MESSAGE value="api v0.0.1" />
     <MESSAGE value="app-types.d.ts added" />
-    <option name="LAST_COMMIT_MESSAGE" value="app-types.d.ts added" />
+    <MESSAGE value="Немного фронта и работы с api" />
+    <option name="LAST_COMMIT_MESSAGE" value="Немного фронта и работы с api" />
   </component>
   <component name="WindowStateProjectService">
     <state x="374" y="223" key="#Log_Highlighting_(ideolog)" timestamp="1626520338237">
@@ -248,10 +267,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="399" y="246" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1626985158515" />
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1627668104492">
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1627751391794">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1627668104492" />
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1627751391794" />
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1627128467570">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -261,33 +280,38 @@
     </state>
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1627335294651" />
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.25.1440.807@0.25.1440.807" timestamp="1627335573524" />
-    <state width="1419" height="345" key="GridCell.Tab.0.bottom" timestamp="1627667039705">
+    <state width="1419" height="345" key="GridCell.Tab.0.bottom" timestamp="1627745321315">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="345" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1627667039705" />
+    <state width="1419" height="345" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1627745321315" />
     <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1620824081739" />
-    <state width="1419" height="345" key="GridCell.Tab.0.center" timestamp="1627667039702">
+    <state width="1419" height="345" key="GridCell.Tab.0.center" timestamp="1627745321313">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="345" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1627667039702" />
+    <state width="1419" height="345" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1627745321313" />
     <state width="1419" height="245" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1620824081736" />
-    <state width="1419" height="345" key="GridCell.Tab.0.left" timestamp="1627667039700">
+    <state width="1419" height="345" key="GridCell.Tab.0.left" timestamp="1627745321312">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="345" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1627667039700" />
+    <state width="1419" height="345" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1627745321312" />
     <state width="1419" height="245" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1620824081732" />
-    <state width="1419" height="345" key="GridCell.Tab.0.right" timestamp="1627667039704">
+    <state width="1419" height="345" key="GridCell.Tab.0.right" timestamp="1627745321314">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="345" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1627667039703" />
+    <state width="1419" height="345" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1627745321314" />
     <state width="1419" height="245" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1620824081737" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1626730645893">
+    <state x="144" y="69" key="SettingsEditor" timestamp="1627754609855">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1626730645893" />
-    <state x="385" y="217" width="670" height="676" key="search.everywhere.popup" timestamp="1627584820155">
+    <state x="144" y="69" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1627754609855" />
+    <state x="114" y="74" key="SettingsEditor/0.25.1440.809@0.25.1440.809" timestamp="1627754230804" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1627676286159">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="217" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1627584820155" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1627676286159" />
+    <state x="385" y="217" width="670" height="676" key="search.everywhere.popup" timestamp="1627752728336">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="217" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1627752728336" />
   </component>
 </project>

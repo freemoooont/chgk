@@ -7,7 +7,7 @@ export const UserTeam: React.FC = (): React.ReactElement => {
 
     const dispatch = useDispatch();
     const fetch = async () => dispatch(FetchUserTeamData());
-    React.useEffect(()=>{ fetch() },[])
+    React.useEffect(()=>{ fetch() },[]);
 
     const loadingStatus = useSelector(selectUserTeamLoaded);
     const userTeamData = useSelector(selectUserTeamData);

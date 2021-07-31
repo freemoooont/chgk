@@ -17,7 +17,6 @@ export type SignupRequestBody = {
 const authRequest = async (
     body: SignupRequestBody | LoginRequestBody,
     endpoint: string
-    //TODO: Проверить на работоспособность
 ): Promise<NetworkResponse<any>> => {
     try{
         return await publicRequest({url: endpoint, method: 'POST', data: body})
@@ -25,7 +24,7 @@ const authRequest = async (
         throw e;
     }
 };
-//TODO: Проверить на работоспособность
+//TODO: Добавить валидацию токена
 export const AuthApi = {
     async basicLogin(body: LoginRequestBody): Promise<NetworkResponse<AuthData>>{
         return await authRequest(body, 'login/basic')
