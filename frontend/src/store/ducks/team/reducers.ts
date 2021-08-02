@@ -1,29 +1,33 @@
-import { TeamsListState } from "./contracts/state";
+import { TeamState } from "./contracts/state";
 import { LoadingStatus } from "../../types";
 import produce, { Draft } from "immer";
-import { TeamsListActions } from "./actionCreators";
-import { TeamsListActionType } from "./contracts/actionTypes";
+import { TeamActions } from "./actionCreators";
+import { TeamActionType } from "./contracts/actionTypes";
 
-const initialState: TeamsListState = {
+const initialState: TeamState = {
   LoadingStatus: LoadingStatus.NEVER,
   data: undefined,
   message: undefined,
 };
 
-export const teamsListReducer = produce(
-  (draft: Draft<TeamsListState>, action: TeamsListActions) => {
+export const teamReducer = produce(
+  (draft: Draft<TeamState>, action: TeamActions) => {
     switch (action.type) {
-      case TeamsListActionType.SET_TEAMS_LIST_DATA:
+      case TeamActionType.SET_TEAM_DATA:
         draft.data = action.payload;
         draft.LoadingStatus = LoadingStatus.SUCCESS;
         break;
 
-      case TeamsListActionType.SET_TEAMS_LIST_LOADING_STATUS:
+      case TeamActionType.SET_TEAM_STATUS_LOADING:
         draft.LoadingStatus = action.payload;
         break;
 
-      case TeamsListActionType.SET_ERROR_MESSAGE:
+      case TeamActionType.SET_TEAM_ERROR_MESSAGE:
         draft.LoadingStatus = LoadingStatus.ERROR;
+        draft.message = action.payload;
+        break;
+
+      case TeamActionType.SET_TEAM_MESSAGE:
         draft.message = action.payload;
         break;
 

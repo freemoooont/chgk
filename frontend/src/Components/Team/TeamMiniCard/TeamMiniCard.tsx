@@ -1,12 +1,17 @@
 import React from "react";
-import { Team } from "../../../app-types";
+import { TeamInfo } from "../../../app-types";
+import { Link } from "react-router-dom";
 
 interface TeamMiniCardProps {
-  team: Team;
+  team: TeamInfo;
 }
 
 export const TeamMiniCard: React.FC<TeamMiniCardProps> = ({
   team,
 }: TeamMiniCardProps): React.ReactElement => {
-  return <div>{team.name}</div>;
+  return (
+    <Link to={{ pathname: `/team/${team._id}` }}>
+      <div>{team.name}</div>
+    </Link>
+  );
 };

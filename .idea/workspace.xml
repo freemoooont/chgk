@@ -11,38 +11,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03050a8e-47b9-465e-bdb4-a6dcda31af69" name="Default Changelist" comment="Немного фронта и работы с api">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api/logs/2021-07-30.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api/logs/2021-07-31.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/EventCard/EventCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Team/TeamMiniCard/TeamMiniCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/TeamsList/TeamsList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/services/api/EventsApi.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/actionCreators.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/contracts/actionTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/contracts/state.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/reducers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/sagas.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/selectors.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/actionCreator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/contracts/actionTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/contracts/state.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/reducers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/sagas.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/selectors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/logs/2021-08-01.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/logs/2021-08-02.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/TODO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Team/TeamProfile/TeamProfile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Team/TeamProfile/UpdateTeamModal/UpdateTeamModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/EventProfile/EventProfile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Profile/Profile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Team/Team.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/event/actionCreators.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/event/contracts/actionTypes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/event/contracts/state.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/event/reducers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/event/sagas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/event/selectors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/team/actionCreators.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/team/contracts/actionTypes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/team/contracts/state.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/team/reducers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/team/sagas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/team/selectors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/actionCreators.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/logs/.7911505d1cb8c52a2a36766b1cca935c11b5442f-audit.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/logs/.7911505d1cb8c52a2a36766b1cca935c11b5442f-audit.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/logs/2021-07-17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/logs/2021-07-18.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/logs/2021-07-19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/database/repository/EventRepo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/repository/EventRepo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/routes/v1/event/eventProfile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/event/eventProfile.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/routes/v1/team/capitan.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/team/capitan.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/EventCard/EventCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/EventCard/EventCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Team/TeamMiniCard/TeamMiniCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Team/TeamMiniCard/TeamMiniCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app-types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app-types.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/UserTeam/UserTeam.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/UserTeam/UserTeam.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/services/api/AuthApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api/AuthApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/TeamsList/TeamsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/TeamsList/TeamsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/UserTeam/UserTeam.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/api/EventsApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api/EventsApi.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/services/api/TeamApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api/TeamApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/sagas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/sagas.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/events/actionCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/actionCreators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/events/contracts/actionTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/contracts/actionTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/events/contracts/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/contracts/state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/events/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/reducers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/events/sagas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/sagas.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/events/selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/selectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/actionCreator.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/contracts/actionTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/contracts/actionTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/contracts/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/contracts/state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/reducers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/sagas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/sagas.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/selectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/user/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/user/reducers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/actionCreators.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/contracts/actionTypes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/contracts/state.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/reducers.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/sagas.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/userTeam/selectors.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/rootReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/rootReducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/saga.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/saga.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +86,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -71,7 +104,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.19.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.0" />
@@ -190,7 +225,10 @@
       <workItem from="1627632727185" duration="20813000" />
       <workItem from="1627716296534" duration="264000" />
       <workItem from="1627717141859" duration="351000" />
-      <workItem from="1627718210542" duration="13155000" />
+      <workItem from="1627718210542" duration="13381000" />
+      <workItem from="1627764001632" duration="1632000" />
+      <workItem from="1627814499846" duration="16889000" />
+      <workItem from="1627899814281" duration="26107000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1621513872597</created>
@@ -227,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627676271027</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавил несколько &quot;уток&quot; в стор и новые запросы на апи">
+      <created>1627754866033</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627754866033</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +297,8 @@
     <MESSAGE value="api v0.0.1" />
     <MESSAGE value="app-types.d.ts added" />
     <MESSAGE value="Немного фронта и работы с api" />
-    <option name="LAST_COMMIT_MESSAGE" value="Немного фронта и работы с api" />
+    <MESSAGE value="Добавил несколько &quot;уток&quot; в стор и новые запросы на апи" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил несколько &quot;уток&quot; в стор и новые запросы на апи" />
   </component>
   <component name="WindowStateProjectService">
     <state x="374" y="223" key="#Log_Highlighting_(ideolog)" timestamp="1626520338237">
@@ -267,48 +313,108 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="399" y="246" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1626985158515" />
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1627751391794">
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1627906017865">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1627751391794" />
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1627906017865" />
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1627128467570">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1627128467570" />
+    <state x="483" y="157" key="#xdebugger.evaluate" timestamp="1627855146576">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="483" y="157" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1627855146576" />
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1627335573524">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1627335294651" />
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.25.1440.807@0.25.1440.807" timestamp="1627335573524" />
-    <state width="1419" height="345" key="GridCell.Tab.0.bottom" timestamp="1627745321315">
+    <state width="1419" height="345" key="GridCell.Tab.0.bottom" timestamp="1627923652165">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="345" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1627745321315" />
+    <state width="1419" height="345" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1627923652165" />
     <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1620824081739" />
-    <state width="1419" height="345" key="GridCell.Tab.0.center" timestamp="1627745321313">
+    <state width="1419" height="345" key="GridCell.Tab.0.center" timestamp="1627923652160">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="345" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1627745321313" />
+    <state width="1419" height="345" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1627923652159" />
     <state width="1419" height="245" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1620824081736" />
-    <state width="1419" height="345" key="GridCell.Tab.0.left" timestamp="1627745321312">
+    <state width="1419" height="345" key="GridCell.Tab.0.left" timestamp="1627923652152">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="345" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1627745321312" />
+    <state width="1419" height="345" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1627923652152" />
     <state width="1419" height="245" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1620824081732" />
-    <state width="1419" height="345" key="GridCell.Tab.0.right" timestamp="1627745321314">
+    <state width="1419" height="345" key="GridCell.Tab.0.right" timestamp="1627923652161">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="345" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1627745321314" />
+    <state width="1419" height="345" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1627923652161" />
     <state width="1419" height="245" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1620824081737" />
-    <state x="144" y="69" key="SettingsEditor" timestamp="1627754609855">
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1627855175834">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="144" y="69" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1627754609855" />
+    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1627855175834" />
+    <state width="1419" height="304" key="GridCell.Tab.1.center" timestamp="1627855175832">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1627855175832" />
+    <state width="1419" height="304" key="GridCell.Tab.1.left" timestamp="1627855175831">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1627855175831" />
+    <state width="1419" height="304" key="GridCell.Tab.1.right" timestamp="1627855175833">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1627855175833" />
+    <state width="1419" height="304" key="GridCell.Tab.2.bottom" timestamp="1627855175838">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1627855175838" />
+    <state width="1419" height="304" key="GridCell.Tab.2.center" timestamp="1627855175836">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1627855175836" />
+    <state width="1419" height="304" key="GridCell.Tab.2.left" timestamp="1627855175835">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1627855175835" />
+    <state width="1419" height="304" key="GridCell.Tab.2.right" timestamp="1627855175837">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1627855175837" />
+    <state width="1419" height="304" key="GridCell.Tab.3.bottom" timestamp="1627855175842">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.3.bottom/0.0.1440.900@0.0.1440.900" timestamp="1627855175842" />
+    <state width="1419" height="304" key="GridCell.Tab.3.center" timestamp="1627855175840">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.3.center/0.0.1440.900@0.0.1440.900" timestamp="1627855175840" />
+    <state width="1419" height="304" key="GridCell.Tab.3.left" timestamp="1627855175839">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.3.left/0.0.1440.900@0.0.1440.900" timestamp="1627855175839" />
+    <state width="1419" height="304" key="GridCell.Tab.3.right" timestamp="1627855175841">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1419" height="304" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1627855175841" />
+    <state x="168" y="81" key="SettingsEditor" timestamp="1627764692916">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="168" y="81" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1627764692916" />
     <state x="114" y="74" key="SettingsEditor/0.25.1440.809@0.25.1440.809" timestamp="1627754230804" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1627676286159">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1627754871641">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1627676286159" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1627754871641" />
+    <state x="265" y="183" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1627855104368">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="265" y="183" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900@0.0.1440.900" timestamp="1627855104368" />
+    <state x="385" y="210" key="run.anything.popup" timestamp="1627765518780">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="210" key="run.anything.popup/0.0.1440.900@0.0.1440.900" timestamp="1627765518780" />
     <state x="385" y="217" width="670" height="676" key="search.everywhere.popup" timestamp="1627752728336">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

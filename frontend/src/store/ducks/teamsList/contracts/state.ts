@@ -1,8 +1,8 @@
-import {Message, Team} from "../../../../app-types";
-import {LoadingStatus} from "../../../types";
+import { Message, TeamInfo } from "../../../../app-types";
+import { LoadingStatus } from "../../../types";
 
 export type TeamsListState = {
-    data: Team[] | undefined;
-    LoadingStatus: LoadingStatus;
-    message: Message | undefined
-}
+  data: TeamInfo[] | undefined;
+  LoadingStatus: LoadingStatus;
+  message: Message | undefined;
+};

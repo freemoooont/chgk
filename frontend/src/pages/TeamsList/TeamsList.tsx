@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchTeamsListData } from "../../store/ducks/teamsList/actionCreator";
+import { fetchTeamsListData } from "../../store/ducks/teamsList/actionCreators";
 import {
   selectTeamsListData,
   selectTeamsListIsLoaded,
