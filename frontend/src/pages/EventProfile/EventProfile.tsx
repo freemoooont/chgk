@@ -15,23 +15,25 @@ import {
 
 import { selectUserData } from "../../store/ducks/user/selectors";
 import { registerTeamOnEvent } from "../../store/ducks/team/actionCreators";
-import { Message } from "../../app-types";
-import { isTeamRegisteredSuccess } from "../../store/ducks/team/selectors";
+import { selectMessage } from "../../store/ducks/team/selectors";
 
+//TODO: Подумай как сделать попроще и уменьшить количество рендеров компонента
 export const EventProfile: React.FC<RouteComponentProps<{ id: string }>> = ({
   match,
 }): React.ReactElement => {
   const dispatch = useDispatch();
-  const [clicked, setClicked] = React.useState<boolean>(false);
+  const [responseMessage, setResponseMessage] = React.useState<
+    string | undefined
+  >();
 
-  const isRegisteredSuccess: boolean = useSelector(isTeamRegisteredSuccess);
-  console.log(isRegisteredSuccess);
+  const message = useSelector(selectMessage);
 
   const event = useSelector(selectEventData);
   const isEventPassed = useSelector(selectEventIsPassed);
   const eventResult = useSelector(selectEventResultData);
+
   const isEventOpenForRegister = useSelector(selectIsEventOpenForRegister);
-  console.log("rerererere");
+
   const userId = useSelector(selectUserData)?.user._id;
   //Возможно, стоит перенести в стор
   const isUserTeamRegisteredOnEvent: boolean = !!useSelector(
@@ -48,10 +50,12 @@ export const EventProfile: React.FC<RouteComponentProps<{ id: string }>> = ({
     }
   }, [dispatch, isEventPassed]);
 
-  const onRegisterHandle = async () => {
-    await dispatch(registerTeamOnEvent(match.params.id));
-    await setClicked(true);
-    await dispatch(fetchEventData(match.params.id));
+  React.useEffect(() => {
+    setResponseMessage(message?.text);
+  }, [message]);
+
+  const onRegisterHandle = () => {
+    dispatch(registerTeamOnEvent(match.params.id));
   };
 
   return (
@@ -64,6 +68,14 @@ export const EventProfile: React.FC<RouteComponentProps<{ id: string }>> = ({
       {isEventOpenForRegister && !isUserTeamRegisteredOnEvent && (
         <button onClick={onRegisterHandle}>Зарегай команду, бро</button>
       )}
+      {responseMessage && <div>{responseMessage}</div>}
+      {eventResult &&
+        eventResult.teamResults?.map((res) => (
+          <div key={res.team._id}>
+            {" "}
+            Команда: {res.team.name} Место: {res.place}
+          </div>
+        ))}
     </div>
   );
 };

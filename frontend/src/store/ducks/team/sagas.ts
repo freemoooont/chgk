@@ -15,6 +15,7 @@ import {
 } from "./contracts/actionTypes";
 import { EventsApi } from "../../../services/api/EventsApi";
 import { NetworkResponse } from "../../../core/axios";
+import { fetchEventData } from "../event/actionCreators";
 
 export function* fetchTeamData({ payload }: FetchTeamDataActionInterface) {
   try {
@@ -61,6 +62,7 @@ export function* registerUserTeamOnEvent({
       payload
     );
     yield put(setTeamMessage({ text: response.message, type: "success" }));
+    yield put(fetchEventData(payload));
   } catch (e) {
     yield put(setTeamMessage({ type: "error", text: e.message }));
   }

@@ -8,7 +8,7 @@ import { LoadingStatus } from "../../types";
 import { EventsApi } from "../../../services/api/EventsApi";
 import { EventsActionType } from "./contracts/actionTypes";
 
-export function* fetchEvent() {
+export function* fetchEvents() {
   try {
     yield put(setEventsLoadingStatus(LoadingStatus.LOADING));
     const { data } = yield call(EventsApi.allEvents);
@@ -20,5 +20,5 @@ export function* fetchEvent() {
 }
 
 export function* eventsSaga() {
-  yield takeLatest(EventsActionType.FETCH_EVENTS_DATA, fetchEvent);
+  yield takeLatest(EventsActionType.FETCH_EVENTS_DATA, fetchEvents);
 }

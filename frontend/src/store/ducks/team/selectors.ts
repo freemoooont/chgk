@@ -2,7 +2,6 @@ import { RootState } from "../../store";
 import { TeamState } from "./contracts/state";
 import { LoadingStatus } from "../../types";
 import { selectUserState } from "../user/selectors";
-import { selectEventState } from "../event/selectors";
 
 export const selectTeamState = (state: RootState): TeamState => state.team;
 
@@ -20,5 +19,5 @@ export const selectIsThisUserTeam = (state: RootState): boolean =>
   selectTeamState(state).data?.teamInfo.capitan._id ==
   selectUserState(state).data?.user._id;
 
-export const isTeamRegisteredSuccess = (state: RootState): boolean =>
-  selectEventState(state).Message?.text == "Team registered successful";
+export const selectMessage = (state: RootState): TeamState["message"] =>
+  selectTeamState(state).message;
