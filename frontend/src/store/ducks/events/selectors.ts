@@ -13,4 +13,4 @@ export const selectEventsLoadingStatus = (
 ): EventsState["LoadingStatus"] => selectEventsState(state).LoadingStatus;
 
 export const selectEventsIsLoaded = (state: RootState): boolean =>
-  selectEventsState(state).LoadingStatus == LoadingStatus.SUCCESS;
+  selectEventsState(state).LoadingStatus === LoadingStatus.SUCCESS;

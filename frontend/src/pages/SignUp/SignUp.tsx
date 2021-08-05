@@ -1,31 +1,35 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchSignIn } from "../../store/ducks/user/actionCreators";
+import { fetchSignUp } from "../../store/ducks/user/actionCreators";
 import {
   selectIsAuth,
   selectUserMessage,
 } from "../../store/ducks/user/selectors";
 import { Message } from "../../app-types";
 
-export interface loginFromProps {
+export interface SignUpFromProps {
+  name: string;
   email: string;
   password: string;
+  profilePicUrl?: string | undefined;
 }
 
-const initialProp: loginFromProps = {
+const initialProp: SignUpFromProps = {
+  name: "",
   email: "",
   password: "",
+  profilePicUrl: undefined,
 };
 
-export const Login: React.FC = (): React.ReactElement => {
+export const SignUp: React.FC = (): React.ReactElement => {
   const isAuth = useSelector(selectIsAuth);
-  const [formData, setFormData] = React.useState<loginFromProps>(initialProp);
+  const [formData, setFormData] = React.useState<SignUpFromProps>(initialProp);
   const dispatch = useDispatch();
   const history = useHistory();
 
   const onSubmitHandle = () => {
-    dispatch(fetchSignIn(formData));
+    dispatch(fetchSignUp(formData));
   };
 
   const message = useSelector(selectUserMessage);
@@ -44,15 +48,35 @@ export const Login: React.FC = (): React.ReactElement => {
   return (
     <div>
       <label>
-        {!authError ? <>Залогинься пес</> : <>{authError}</>}
+        {!authError ? (
+          <>
+            Зарегайся пес <br />{" "}
+          </>
+        ) : (
+          <>{authError}</>
+        )}
+        FullNamePls:{" "}
+        <input
+          type="text"
+          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+        />
+        Email:{" "}
         <input
           type="text"
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         />
+        Password:{" "}
         <input
           type="text"
           onChange={(event) =>
             setFormData({ ...formData, password: event.target.value })
+          }
+        />
+        urlPic:{" "}
+        <input
+          type="text"
+          onChange={(event) =>
+            setFormData({ ...formData, profilePicUrl: event.target.value })
           }
         />
         <button onClick={onSubmitHandle}>Отправить</button>

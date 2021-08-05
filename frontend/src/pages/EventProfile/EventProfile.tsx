@@ -38,7 +38,7 @@ export const EventProfile: React.FC<RouteComponentProps<{ id: string }>> = ({
   //Возможно, стоит перенести в стор
   const isUserTeamRegisteredOnEvent: boolean = !!useSelector(
     selectEventTeams
-  )?.find((team) => team.capitan._id == userId);
+  )?.find((team) => team.capitan._id === userId);
 
   React.useEffect(() => {
     dispatch(fetchEventData(match.params.id));
@@ -48,7 +48,7 @@ export const EventProfile: React.FC<RouteComponentProps<{ id: string }>> = ({
     if (isEventPassed) {
       dispatch(fetchEventResultData(match.params.id));
     }
-  }, [dispatch, isEventPassed]);
+  }, [dispatch, isEventPassed, match.params.id]);
 
   React.useEffect(() => {
     setResponseMessage(message?.text);
@@ -70,10 +70,10 @@ export const EventProfile: React.FC<RouteComponentProps<{ id: string }>> = ({
       )}
       {responseMessage && <div>{responseMessage}</div>}
       {eventResult &&
-        eventResult.teamResults?.map((res) => (
-          <div key={res.team._id}>
+        eventResult.teamResults?.map((res, idx) => (
+          <div key={idx}>
             {" "}
-            Команда: {res.team.name} Место: {res.place}
+            Команда: {res.team} Место: {res.place}
           </div>
         ))}
     </div>

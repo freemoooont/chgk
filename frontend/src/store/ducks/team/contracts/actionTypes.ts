@@ -11,6 +11,7 @@ export enum TeamActionType {
   FETCH_TEAM_BY_USER = "team/FETCH_TEAM_BY_USER",
   REGISTER_TEAM_ON_EVENT = "team/REGISTER_TEAM_ON_EVENT",
   SET_TEAM_MESSAGE = "team/SET_TEAM_MESSAGE",
+  FETCH_CREATE_TEAM_REQUEST = "team/FETCH_CREATE_TEAM_REQUEST",
 }
 
 export interface SetTeamDataActionInterface
@@ -58,4 +59,10 @@ export interface SetTeamMessageActionInterface
   extends Action<TeamActionType.SET_TEAM_MESSAGE> {
   type: TeamActionType.SET_TEAM_MESSAGE;
   payload: Message | undefined;
+}
+
+export interface FetchCreateTeamRequestActionInterface
+  extends Action<TeamActionType.FETCH_CREATE_TEAM_REQUEST> {
+  type: TeamActionType.FETCH_CREATE_TEAM_REQUEST;
+  payload: Pick<TeamInfo, "name" | "profilePicUrl" | "teamMates">;
 }

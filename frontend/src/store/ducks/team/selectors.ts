@@ -13,11 +13,13 @@ export const selectTeamLoadingStatus = (
 ): TeamState["LoadingStatus"] => selectTeamState(state).LoadingStatus;
 
 export const selectTeamIsLoaded = (state: RootState): boolean =>
-  selectTeamState(state).LoadingStatus == LoadingStatus.SUCCESS;
+  selectTeamState(state).LoadingStatus === LoadingStatus.SUCCESS;
 
 export const selectIsThisUserTeam = (state: RootState): boolean =>
-  selectTeamState(state).data?.teamInfo.capitan._id ==
-  selectUserState(state).data?.user._id;
+  selectTeamIsLoaded(state)
+    ? selectTeamState(state).data?.teamInfo?.capitan?._id ===
+      selectUserState(state).data?.user._id
+    : false;
 
 export const selectMessage = (state: RootState): TeamState["message"] =>
   selectTeamState(state).message;

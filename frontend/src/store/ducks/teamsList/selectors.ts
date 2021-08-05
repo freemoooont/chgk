@@ -10,4 +10,4 @@ export const selectTeamsListStatusLoading = (
   state: RootState
 ): TeamsListState["LoadingStatus"] => selectTeamsListState(state).LoadingStatus;
 export const selectTeamsListIsLoaded = (state: RootState): boolean =>
-  selectTeamsListStatusLoading(state) == LoadingStatus.SUCCESS;
+  selectTeamsListStatusLoading(state) === LoadingStatus.SUCCESS;

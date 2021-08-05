@@ -1,5 +1,6 @@
 import { TeamState } from "./contracts/state";
 import {
+  FetchCreateTeamRequestActionInterface,
   FetchTeamByUserActionInterface,
   FetchTeamDataActionInterface,
   RegisterTeamOnEventActionInterface,
@@ -63,6 +64,13 @@ export const setTeamMessage = (
   payload: TeamState["message"]
 ): SetTeamMessageActionInterface => ({
   type: TeamActionType.SET_TEAM_MESSAGE,
+  payload,
+});
+
+export const fetchCreateTeamRequest = (
+  payload: Pick<TeamInfo, "name" | "profilePicUrl" | "teamMates">
+): FetchCreateTeamRequestActionInterface => ({
+  type: TeamActionType.FETCH_CREATE_TEAM_REQUEST,
   payload,
 });
 

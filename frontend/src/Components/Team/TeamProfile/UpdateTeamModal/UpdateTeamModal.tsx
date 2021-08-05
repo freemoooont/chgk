@@ -14,7 +14,7 @@ export const UpdateTeamModal: React.FC<UpdateTeamModalProps> = ({
   profilePicUrl,
   teamMates,
 }: UpdateTeamModalProps): React.ReactElement => {
-  if (name == undefined) name = "";
+  if (name === undefined) name = "";
 
   const dispatch = useDispatch();
 
@@ -33,7 +33,6 @@ export const UpdateTeamModal: React.FC<UpdateTeamModalProps> = ({
   };
 
   const submitHandle = () => {
-    console.log(valueChanged);
     dispatch(setUpdateTeam(valueChanged));
   };
 

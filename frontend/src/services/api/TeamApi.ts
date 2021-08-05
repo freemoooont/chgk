@@ -56,4 +56,21 @@ export const TeamApi = {
       throw e;
     }
   },
+
+  async createTeam(
+    data: Pick<TeamInfo, "name" | "profilePicUrl" | "teamMates">
+  ): Promise<NetworkResponse<any>> {
+    try {
+      return await protectedRequest(
+        {
+          url: "team/create/",
+          method: "POST",
+          data,
+        },
+        getToken()
+      );
+    } catch (e) {
+      throw e;
+    }
+  },
 };
