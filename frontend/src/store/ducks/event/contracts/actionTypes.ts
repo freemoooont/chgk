@@ -10,6 +10,7 @@ export enum EventActionType {
   SET_EVENT_RESULT_DATA = "event/SET_EVENT_RESULT_DATA",
   FETCH_EVENT_RESULT_DATA = "event/FETCH_EVENT_RESULT_DATA",
   SET_EVENT_LOADING_STATUS_RESULT = "event/SET_EVENT_LOADING_STATUS_RESULT",
+  SET_REQUEST_CREATE_EVENT = "event/SET_REQUEST_CREATE_EVENT",
 }
 
 export interface SetEventDataActionInterface
@@ -52,4 +53,11 @@ export interface SetEventLoadingStatusResultActionInterface
   extends Action<EventActionType.SET_EVENT_LOADING_STATUS_RESULT> {
   type: EventActionType.SET_EVENT_LOADING_STATUS_RESULT;
   payload: LoadingStatus;
+}
+
+export interface SetRequestCreateEventActionInterface
+  extends Action<EventActionType.SET_REQUEST_CREATE_EVENT> {
+  type: EventActionType.SET_REQUEST_CREATE_EVENT;
+  //TODO: Пацанская типизация. Типы положить в AdminApi
+  payload: any;
 }

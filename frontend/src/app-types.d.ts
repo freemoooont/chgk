@@ -25,9 +25,9 @@ export type Message = {
 };
 
 export type EventInfo = {
-  _id: string;
-  registeredTeams: Array<string>;
-  status: boolean;
+  _id?: string;
+  registeredTeams?: Array<string>;
+  status?: boolean;
   //TODO: Добавить enum
   code: string;
   description: string;
@@ -36,8 +36,8 @@ export type EventInfo = {
   questionAmount: number;
   questionInTour: number;
   startDate: Date;
-  updatedAt: Date;
-  createdAt: Date;
+  updatedAt?: Date;
+  createdAt?: Date;
 };
 
 export type TeamInfo = {

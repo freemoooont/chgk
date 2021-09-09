@@ -18,7 +18,9 @@ export const eventsReducer = produce(
       case EventsActionType.SET_EVENTS_DATA:
         draft.data = action.payload;
         draft.data?.sort(function (a, b) {
-          return a.startDate.getTime() - b.startDate.getTime();
+          return (
+            new Date(a.startDate).getTime() - new Date(b.startDate).getTime()
+          );
         });
         draft.LoadingStatus = LoadingStatus.SUCCESS;
         break;

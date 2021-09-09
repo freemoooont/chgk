@@ -10,16 +10,105 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03050a8e-47b9-465e-bdb4-a6dcda31af69" name="Default Changelist" comment="Немного фронта и работы с api">
-      <change afterPath="$PROJECT_DIR$/api/TODO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/logs/2021-07-30.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/logs/2021-07-31.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/logs/2021-08-01.log" afterDir="false" />
+    <list default="true" id="03050a8e-47b9-465e-bdb4-a6dcda31af69" name="Default Changelist" comment="Убраны некоторые баги, добавлена регестрация пользователя и создание команды.">
+      <change afterPath="$PROJECT_DIR$/api/coverage/clover.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/coverage-final.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/block-navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/prettify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/prettify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/sort-arrow-sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/sorter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/app.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/auth/apikey.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/auth/authUtils.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/auth/authetication.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/auth/authorization.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/auth/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/auth/schema.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/config.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/core/ApiError.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/core/ApiResponse.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/core/JWT.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/core/Logger.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/core/OverallPlacesChanger.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/core/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/index.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/model/ApiKey.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/model/ChgkResult.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/model/Event.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/model/Keystore.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/model/Role.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/model/Team.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/model/User.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/model/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/repository/ApiKeyRepo.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/repository/ChgkResultRepo.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/repository/EventRepo.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/repository/KeystoreRepo.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/repository/RoleRepo.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/repository/TeamRepo.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/repository/UserRepo.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/database/repository/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/helpers/asyncHandler.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/helpers/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/helpers/role.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/helpers/validator.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/access/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/access/logout.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/access/schema.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/access/signin.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/access/signup.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/access/token.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/admin/adminRoutes.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/admin/event.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/admin/results.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/admin/schema.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/event/eventProfile.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/event/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/index.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/profile/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/profile/schema.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/profile/user.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/team/capitan.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/team/create.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/team/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/team/publicProfile.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov-report/src/routes/v1/team/teamRoutes.ts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/coverage/lcov.info" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api/logs/2021-08-02.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api/logs/2021-08-03.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/api/logs/2021-08-04.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Team/CreateTeamModal/CreateTeamModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/SignUp/SignUp.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/.env.test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/auth/apiKey/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/auth/apiKey/unit.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/auth/authUtils/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/auth/authUtils/unit.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/auth/authentication/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/auth/authentication/unit.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/auth/authorization/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/auth/authorization/unit.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/core/JWT/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/core/JWT/unit.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/routes/v1/login/integration.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/routes/v1/login/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/routes/v1/login/unit.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/routes/v1/signup/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/routes/v1/signup/unit.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/tests/setup.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/AdminPanel/AdminPanel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/AdminPanel/CreateEvent/CreateEvent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/AdminPanel/Game/Chgk/ChgkPanel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/services/api/AdminApi.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/services/utils/RouteWithSubRoutes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/logs/.7911505d1cb8c52a2a36766b1cca935c11b5442f-audit.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/logs/.7911505d1cb8c52a2a36766b1cca935c11b5442f-audit.json" afterDir="false" />
@@ -27,30 +116,27 @@
       <change beforePath="$PROJECT_DIR$/api/logs/2021-07-18.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/logs/2021-07-19.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/api/logs/2021-07-20.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/database/repository/TeamRepo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/repository/TeamRepo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/routes/v1/profile/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/profile/user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/routes/v1/team/create.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/team/create.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/auth/authorization.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/auth/authorization.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/database/model/Keystore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/model/Keystore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/database/repository/UserRepo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/database/repository/UserRepo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/routes/v1/admin/adminRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/admin/adminRoutes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/routes/v1/team/capitan.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/routes/v1/team/capitan.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Team/TeamProfile/TeamProfile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Team/TeamProfile/TeamProfile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/Team/TeamProfile/UpdateTeamModal/UpdateTeamModal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/Team/TeamProfile/UpdateTeamModal/UpdateTeamModal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/core/axios.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/core/axios.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app-types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app-types.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/EventProfile/EventProfile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/EventProfile/EventProfile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Profile/Profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/services/api/AuthApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api/AuthApi.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/services/api/TeamApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/api/TeamApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/event/actionCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/event/actionCreators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/event/contracts/actionTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/event/contracts/actionTypes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/event/sagas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/event/sagas.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/events/selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/selectors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/team/actionCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/team/actionCreators.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/team/contracts/actionTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/team/contracts/actionTypes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/team/sagas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/team/sagas.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/team/selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/team/selectors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/teamsList/selectors.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/user/actionCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/user/actionCreators.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/user/contracts/actionTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/user/contracts/actionTypes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/user/contracts/state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/user/contracts/state.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/user/sagas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/user/sagas.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/events/actionCreators.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/actionCreators.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/events/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/events/reducers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store/ducks/user/selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/ducks/user/selectors.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,15 +170,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="12.19.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="12.19.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.17.5" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.17.5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/src/tests" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/api/node_modules/jest" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
@@ -102,18 +189,74 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api" />
       <recent name="$PROJECT_DIR$/frontend/src/Components/Team" />
       <recent name="$PROJECT_DIR$/frontend/src/store/ducks/events" />
       <recent name="$PROJECT_DIR$/frontend/src" />
       <recent name="$PROJECT_DIR$/api/src/routes/v1/admin" />
-      <recent name="$PROJECT_DIR$/api" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api/src/tests" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev (1)">
+  <component name="RunManager" selected="npm.test">
+    <configuration name="Login basic route.Должен отправить сообщение об успешной аутентификации для корректно введенных данных" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/api/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/api" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/api/tests/routes/v1/login/unit.test.ts" />
+      <test-names>
+        <test-name value="Login basic route" />
+        <test-name value="Должен отправить сообщение об успешной аутентификации для корректно введенных данных" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Signup basic route" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/api/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/api" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/api/tests/routes/v1/signup/unit.test.ts" />
+      <test-names>
+        <test-name value="Signup basic route" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Signup basic route.Should send error when name is not sent Должен отправить ошибку, е" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/api/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/api" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/api/tests/routes/v1/signup/unit.test.ts" />
+      <test-names>
+        <test-name value="Signup basic route" />
+        <test-name value="Should send error when name is not sent Должен отправить ошибку, е" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Signup basic route.Should send error when user is registered for email" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/api/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/api" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/api/tests/routes/v1/signup/unit.test.ts" />
+      <test-names>
+        <test-name value="Signup basic route" />
+        <test-name value="Should send error when user is registered for email" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="dev (1)" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/api/package.json" />
       <command value="run" />
@@ -124,41 +267,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/api/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="nodemon" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="nodemon" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/frontend/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
+        <script value="test" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -166,10 +279,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start (1)" />
-        <item itemvalue="npm.dev" />
-        <item itemvalue="npm.start" />
-        <item itemvalue="npm.nodemon" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="Jest.Signup basic route.Should send error when name is not sent Должен отправить ошибку, е" />
+        <item itemvalue="Jest.Signup basic route.Should send error when user is registered for email" />
+        <item itemvalue="Jest.Signup basic route" />
+        <item itemvalue="Jest.Login basic route.Должен отправить сообщение об успешной аутентификации для корректно введенных данных" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +320,12 @@
       <workItem from="1627814499846" duration="16889000" />
       <workItem from="1627899814281" duration="26484000" />
       <workItem from="1628003654297" duration="9309000" />
-      <workItem from="1628072275546" duration="21013000" />
+      <workItem from="1628072275546" duration="21678000" />
+      <workItem from="1628327687131" duration="11565000" />
+      <workItem from="1628603740459" duration="6893000" />
+      <workItem from="1629882783952" duration="3000" />
+      <workItem from="1631094632259" duration="17179000" />
+      <workItem from="1631198042429" duration="4949000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1621513872597</created>
@@ -264,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628008552103</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Убраны некоторые баги, добавлена регестрация пользователя и создание команды.">
+      <created>1628193651689</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1628193651689</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +418,8 @@
     <MESSAGE value="Добавил несколько &quot;уток&quot; в стор и новые запросы на апи" />
     <MESSAGE value="3 день" />
     <MESSAGE value="Просмотр информации о эвенте/резултатов, регестрация на эвент" />
-    <option name="LAST_COMMIT_MESSAGE" value="Просмотр информации о эвенте/резултатов, регестрация на эвент" />
+    <MESSAGE value="Убраны некоторые баги, добавлена регестрация пользователя и создание команды." />
+    <option name="LAST_COMMIT_MESSAGE" value="Убраны некоторые баги, добавлена регестрация пользователя и создание команды." />
   </component>
   <component name="WindowStateProjectService">
     <state x="374" y="223" key="#Log_Highlighting_(ideolog)" timestamp="1626520338237">
@@ -307,100 +434,100 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="399" y="246" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1626985158515" />
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1627906017865">
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1628500763410">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1627906017865" />
+    <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1628500763410" />
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1627128467570">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1627128467570" />
-    <state x="483" y="157" key="#xdebugger.evaluate" timestamp="1627855146576">
+    <state x="483" y="157" key="#xdebugger.evaluate" timestamp="1631175932099">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="483" y="157" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1627855146576" />
+    <state x="483" y="157" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1631175932099" />
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1627335573524">
       <screen x="0" y="25" width="1440" height="807" />
     </state>
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1627335294651" />
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.25.1440.807@0.25.1440.807" timestamp="1627335573524" />
-    <state width="1419" height="330" key="GridCell.Tab.0.bottom" timestamp="1628177386595">
+    <state width="1398" height="426" key="GridCell.Tab.0.bottom" timestamp="1631204280519">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="330" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1628177386595" />
-    <state width="1419" height="245" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1620824081739" />
-    <state width="1419" height="330" key="GridCell.Tab.0.center" timestamp="1628177386591">
+    <state width="1398" height="426" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1631204280519" />
+    <state width="1419" height="330" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1629876181563" />
+    <state width="1398" height="426" key="GridCell.Tab.0.center" timestamp="1631204280517">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="330" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1628177386591" />
-    <state width="1419" height="245" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1620824081736" />
-    <state width="1419" height="330" key="GridCell.Tab.0.left" timestamp="1628177386589">
+    <state width="1398" height="426" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1631204280517" />
+    <state width="1419" height="330" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1629876181561" />
+    <state width="1398" height="426" key="GridCell.Tab.0.left" timestamp="1631204280516">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="330" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1628177386589" />
-    <state width="1419" height="245" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1620824081732" />
-    <state width="1419" height="330" key="GridCell.Tab.0.right" timestamp="1628177386593">
+    <state width="1398" height="426" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1631204280516" />
+    <state width="1419" height="330" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1629876181560" />
+    <state width="1398" height="426" key="GridCell.Tab.0.right" timestamp="1631204280518">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="330" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1628177386593" />
-    <state width="1419" height="245" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1620824081737" />
-    <state width="1419" height="304" key="GridCell.Tab.1.bottom" timestamp="1627855175834">
+    <state width="1398" height="426" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1631204280518" />
+    <state width="1419" height="330" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1629876181562" />
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom" timestamp="1631203613091">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1627855175834" />
-    <state width="1419" height="304" key="GridCell.Tab.1.center" timestamp="1627855175832">
+    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1631203613091" />
+    <state width="1398" height="304" key="GridCell.Tab.1.center" timestamp="1631203613089">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1627855175832" />
-    <state width="1419" height="304" key="GridCell.Tab.1.left" timestamp="1627855175831">
+    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1631203613089" />
+    <state width="1398" height="304" key="GridCell.Tab.1.left" timestamp="1631203613088">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1627855175831" />
-    <state width="1419" height="304" key="GridCell.Tab.1.right" timestamp="1627855175833">
+    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1631203613088" />
+    <state width="1398" height="304" key="GridCell.Tab.1.right" timestamp="1631203613090">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1627855175833" />
-    <state width="1419" height="304" key="GridCell.Tab.2.bottom" timestamp="1627855175838">
+    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1631203613090" />
+    <state width="1398" height="304" key="GridCell.Tab.2.bottom" timestamp="1631203613098">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1627855175838" />
-    <state width="1419" height="304" key="GridCell.Tab.2.center" timestamp="1627855175836">
+    <state width="1398" height="304" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1631203613098" />
+    <state width="1398" height="304" key="GridCell.Tab.2.center" timestamp="1631203613092">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1627855175836" />
-    <state width="1419" height="304" key="GridCell.Tab.2.left" timestamp="1627855175835">
+    <state width="1398" height="304" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1631203613092" />
+    <state width="1398" height="304" key="GridCell.Tab.2.left" timestamp="1631203613091">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1627855175835" />
-    <state width="1419" height="304" key="GridCell.Tab.2.right" timestamp="1627855175837">
+    <state width="1398" height="304" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1631203613091" />
+    <state width="1398" height="304" key="GridCell.Tab.2.right" timestamp="1631203613093">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1627855175837" />
-    <state width="1419" height="304" key="GridCell.Tab.3.bottom" timestamp="1627855175842">
+    <state width="1398" height="304" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1631203613093" />
+    <state width="1398" height="304" key="GridCell.Tab.3.bottom" timestamp="1631203613102">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.3.bottom/0.0.1440.900@0.0.1440.900" timestamp="1627855175842" />
-    <state width="1419" height="304" key="GridCell.Tab.3.center" timestamp="1627855175840">
+    <state width="1398" height="304" key="GridCell.Tab.3.bottom/0.0.1440.900@0.0.1440.900" timestamp="1631203613102" />
+    <state width="1398" height="304" key="GridCell.Tab.3.center" timestamp="1631203613100">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.3.center/0.0.1440.900@0.0.1440.900" timestamp="1627855175840" />
-    <state width="1419" height="304" key="GridCell.Tab.3.left" timestamp="1627855175839">
+    <state width="1398" height="304" key="GridCell.Tab.3.center/0.0.1440.900@0.0.1440.900" timestamp="1631203613100" />
+    <state width="1398" height="304" key="GridCell.Tab.3.left" timestamp="1631203613099">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.3.left/0.0.1440.900@0.0.1440.900" timestamp="1627855175839" />
-    <state width="1419" height="304" key="GridCell.Tab.3.right" timestamp="1627855175841">
+    <state width="1398" height="304" key="GridCell.Tab.3.left/0.0.1440.900@0.0.1440.900" timestamp="1631203613099" />
+    <state width="1398" height="304" key="GridCell.Tab.3.right" timestamp="1631203613101">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="304" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1627855175841" />
+    <state width="1398" height="304" key="GridCell.Tab.3.right/0.0.1440.900@0.0.1440.900" timestamp="1631203613101" />
     <state x="168" y="81" key="SettingsEditor" timestamp="1627764692916">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="168" y="81" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1627764692916" />
     <state x="114" y="74" key="SettingsEditor/0.25.1440.809@0.25.1440.809" timestamp="1627754230804" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1628008558116">
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1628193657662">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1628008558116" />
+    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1628193657662" />
     <state x="265" y="183" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1627855104368">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

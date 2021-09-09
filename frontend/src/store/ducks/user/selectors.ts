@@ -21,3 +21,8 @@ export const isUserHaveTeam = (state: RootState): boolean =>
   !!selectUserState(state).data?.user.roles?.find(
     (role) => role.code == "CAPITAN"
   );
+
+export const isUserAdmin = (state: RootState): boolean =>
+  !!selectUserState(state).data?.user.roles?.find(
+    (role) => role.code == "ADMIN"
+  );

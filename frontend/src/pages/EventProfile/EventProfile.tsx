@@ -39,6 +39,7 @@ export const EventProfile: React.FC<RouteComponentProps<{ id: string }>> = ({
   const isUserTeamRegisteredOnEvent: boolean = !!useSelector(
     selectEventTeams
   )?.find((team) => team.capitan._id === userId);
+  console.log(isEventOpenForRegister);
 
   React.useEffect(() => {
     dispatch(fetchEventData(match.params.id));

@@ -14,7 +14,7 @@ export const setEventsData = (
   payload,
 });
 
-export const FetchEventsData = (): FetchEventsDataActionInterface => ({
+export const fetchEventsData = (): FetchEventsDataActionInterface => ({
   type: EventsActionType.FETCH_EVENTS_DATA,
 });
 

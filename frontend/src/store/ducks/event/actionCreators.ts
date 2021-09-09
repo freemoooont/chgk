@@ -8,6 +8,7 @@ import {
   SetEventLoadingStatusResultActionInterface,
   SetEventMessageActionInterface,
   SetEventResultDataActionInterface,
+  SetRequestCreateEventActionInterface,
 } from "./contracts/actionTypes";
 
 export const setEventData = (
@@ -56,6 +57,13 @@ export const setEventLoadingStatusResult = (
   payload: EventState["LoadingStatusResult"]
 ): SetEventLoadingStatusResultActionInterface => ({
   type: EventActionType.SET_EVENT_LOADING_STATUS_RESULT,
+  payload,
+});
+
+export const setRequestCreateEvent = (
+  payload: any
+): SetRequestCreateEventActionInterface => ({
+  type: EventActionType.SET_REQUEST_CREATE_EVENT,
   payload,
 });
 
